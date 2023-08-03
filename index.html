@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+
+    <div class="left-box">
+        <div class="logo-box">
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="logo-image">
+            <h1>ODIN</h1>
+        </div>
+    </div>
+
+    <div class="right-box">
+        <div class="text-box">
+            <h2>
+            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            <br> <br>
+            You <em>know</em> you want to.
+            </h2>
+        </div>
+        <div class="form-box">
+            <div class="text">
+                <h3>Let's do this!</h3>
+            </div>
+            <form id="form" action="/" method="get">
+                <!-- <div id="error"></div> -->
+                <div class="form-item">
+                    <label for="first-name">*First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                </div>
+                <div class="form-item">
+                    <label for="">*Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Snow" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">*Email</label>
+                    <input type="email" id="email" name="email" placeholder="johns@mail.com" required>
+                </div>
+                <div class="form-item">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-item password">
+                    <label for="pass">*Password</label>
+                    <input type="password" id="pass" name="password" required>
+                </div>
+                <div class="form-item">
+                    <label for="pass-confirm">*Confirm Password</label>
+                    <input type="password" id="pass-confirm" name="password-confirm" required>
+                    <div id="error"></div>
+                </div>
+                <button type="submit" class="btn">Register now</button>
+            </form>
+        </div>
+        <div class="footer-box">
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
